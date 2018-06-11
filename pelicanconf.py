@@ -1,18 +1,14 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-import sys
-sys.path.append('.')
-
-
-AUTHOR = u'Esc'
-SITENAME = u'Eflatun Siber Güvenlik'
+AUTHOR = u'esc'
+SITENAME = u'Eflatun Siber Guvenlik'
 SITEURL = 'https://eflatunakademi.github.io'
 
-TIMEZONE = 'Europe/Istanbul'
+PATH = 'content'
 
-from utils import filters
-JINJA_FILTERS = { 'foo': filters.printfoo, 'sidebar': filters.sidebar }
+TIMEZONE = 'Europe/Istanbul'
 
 DEFAULT_LANG = u'tr'
 
@@ -20,61 +16,42 @@ DEFAULT_LANG = u'tr'
 FEED_ALL_ATOM = None
 CATEGORY_FEED_ATOM = None
 TRANSLATION_FEED_ATOM = None
+AUTHOR_FEED_ATOM = None
+AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS =  (('Pelican', 'http://getpelican.com/'),
-          ('Python.org', 'http://python.org/'),
-          ('Jinja2', 'http://jinja.pocoo.org/'),
-          ('You can modify those links in your config file', '#'),)
+LINKS = (('Pelican', 'http://getpelican.com/'),
+         ('Python.org', 'http://python.org/'),
+         ('Jinja2', 'http://jinja.pocoo.org/'),
+         ('You can modify those links in your config file', '#'),)
 
 # Social widget
 SOCIAL = (('Twitter','https://twitter.com/ozdmrhh'), 
 	('Linkedin', 'https://www.linkedin.com/in/huriye-%C3%B6zdemir-2a3435116/'),
-	('Instagram', 'https://github.com/huriozdmr')
+	('Instagram', 'https://github.com/huriozdmr'),
 	('Youtube', 'https://github.com/huriozdmr'))
 
 DEFAULT_PAGINATION = 10
-POST_LIMIT = 3
-
-RELATIVE_URLS = True
-
-DISPLAY_PAGES_ON_MENU = True
-
-# Formatting for dates
-DEFAULT_DATE_FORMAT = ('%a %d %B %Y')
-
-
-# Formatting for urls
-# ARTICLE_DIR = 'blog'
-ARTICLE_URL = "blog/{slug}"
-ARTICLE_SAVE_AS = "blog/{slug}/index.html"
-
-ARCHIVES_URL = "blog"
-ARCHIVES_SAVE_AS = "blog/index.html"
-
-PAGE_DIR = 'pages'
-PAGE_URL = '{slug}'
-PAGE_SAVE_AS = '{slug}/index.html'
-
-CATEGORY_URL = "category/{slug}/"
-CATEGORY_SAVE_AS = "category/{slug}/index.html"
-
-TAG_URL = "tag/{slug}/"
-TAG_SAVE_AS = "tag/{slug}/index.html"
+THEME = "themes/marble"
 
 USE_FOLDER_AS_CATEGORY = True
+DISPLAY_CATEGORIES_ON_MENU = True
+SUMMARY_MAX_LENGTH = None
 
-# Generate yearly archive
-YEAR_ARCHIVE_SAVE_AS = 'blog/{date:%Y}/index.html'
+ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
 
-# Show most recent posts first
+DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives']
+PAGINATED_DIRECT_TEMPLATES = ['index']
 NEWEST_FIRST_ARCHIVES = True
 
 
-THEME = "themes/twenty"
+PLUGIN_PATHS = ['/pelican-plugins', ]
+PLUGINS = ['i18n_subsites', ]
+JINJA_ENVIRONMENT = {
+    'extensions': ['jinja2.ext.i18n'],
+}
 
-STATIC_PATHS = ['images',
-                'fonts',
-                'css',
-                'js',
-                ]
+
+# Uncomment following line if you want document-relative URLs when developing
+#RELATIVE_URLS = True
