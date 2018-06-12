@@ -45,7 +45,7 @@ DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives']
 PAGINATED_DIRECT_TEMPLATES = ['index']
 NEWEST_FIRST_ARCHIVES = True
 
-
+LOGO = "/images/index.jpeg"
 PLUGIN_PATHS = ['pelican-plugins', ]
 PLUGINS = ['i18n_subsites', ]
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
