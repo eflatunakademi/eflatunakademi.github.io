@@ -5,7 +5,7 @@ from __future__ import unicode_literals
 AUTHOR = u'esc'
 SITENAME = u'Eflatun Siber Guvenlik'
 SITEURL = 'https://eflatunakademi.github.io'
-
+SITEDESCRIPTION = "Eflatun Siber Güvenlik"
 PATH = 'content'
 
 TIMEZONE = 'Europe/Istanbul'
@@ -26,10 +26,10 @@ LINKS = (('Pelican', 'http://getpelican.com/'),
          ('You can modify those links in your config file', '#'),)
 
 # Social widget
-SOCIAL = (('Twitter','https://twitter.com/ozdmrhh'), 
-	('Linkedin', 'https://www.linkedin.com/in/huriye-%C3%B6zdemir-2a3435116/'),
-	('Instagram', 'https://github.com/huriozdmr'),
-	('Youtube', 'https://github.com/huriozdmr'))
+SOCIAL = (('Twitter','https://twitter.com/EflatunAkademi'), 
+	('Linkedin', 'https://tr.linkedin.com/company/eflatun-akademi'),
+	('Instagram', 'https://www.instagram.com/eflatunakademi/?hl=tr'),
+	('Youtube', 'https://www.youtube.com/channel/UC924GxT83BxD-aii5fCuyig'))
 
 DEFAULT_PAGINATION = 10
 THEME = "themes/marble"
