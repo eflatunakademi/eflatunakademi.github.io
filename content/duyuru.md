@@ -1,7 +1,7 @@
 Title: Son Eğitim Tarihi
 Date: 2018-06-12
 Tags: 
-Category: Duyuru
+Category: Eğitimler
 Slug: 
 Authors: Esc
 

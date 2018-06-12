@@ -1,11 +1,11 @@
 Title: Eğitmenlerimiz
 Date: 2018-06-11
 Tags: 
-Category: Genel
+Category: Eğitmenler
 Slug: 
 Authors: Esc
 
-![pic](/images/pic1.jpeg)
+![pic](/images/new.jpeg)
 
 Huriye Özdemir
 

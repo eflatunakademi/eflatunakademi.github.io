@@ -1,7 +1,7 @@
 Title: Hakkımızda
 Date: 2018-06-11
 Tags: 
-Category: Genel
+Category: Hakkımızda
 Slug: 
 Authors: Esc
 
