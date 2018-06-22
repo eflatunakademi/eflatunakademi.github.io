@@ -1176,3 +1176,21 @@ body.offcanvas #fh5co-main, body.offcanvas .fh5co-nav-toggle {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+@font-face {
+     font-family:"icomoon";
+     src: url('fonts/icomoon.eot');
+@font-face {
+     /*All the urls*/
+}
+
+/*THIS IS THE ONE YOU NEED TO CALL*/
+.icomoon {
+     font-family: "icomoon";
+     speak: none;
+     font-style: normal;
+     font-weight: normal;
+     font-variant: normal;
+     text-transform: none;
+     line-height: 1;
