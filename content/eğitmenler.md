@@ -5,7 +5,7 @@ Category: Eğitmenler
 Slug: 
 Authors: Esc
 
-![pic](/images/new.jpeg)
+![pic](/images/pic3.jpeg)
 
 Huriye Özdemir
 

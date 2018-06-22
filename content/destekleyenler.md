@@ -1,7 +1,6 @@
 Title: DESTEKLEYENLER
 Date: 2018-06-11
 Tags: sibertakvim,arkakapi
-Category: Hakkımızda
 Slug: 
 Authors: Esc
 

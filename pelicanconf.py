@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
-
+SITENAME = 'Eflatun Siber Güvenlik'
 SITETITLE = u'Eflatun Siber Güvenlik'
 AUTHOR = u'esc'
 SITEURL = 'https://eflatunakademi.github.io'
@@ -9,7 +9,7 @@ SITEDESCRIPTION = "Eflatun Siber Güvenlik"
 PATH = 'content'
 SITESUBTITLE = 'Siber Dünyaya Adım Atın!'
 PYGMENTS_STYLE = 'monokai'
-SITELOGO = '//tr.gravatar.com/userimage/140729574/99ec16843b4e1be68e5890455ee7021a.png'
+SITELOGO = '/images/logo.png'
 TIMEZONE = 'Europe/Istanbul'
 
 DEFAULT_LANG = u'tr'
@@ -21,8 +21,7 @@ TRANSLATION_FEED_ATOM = None
 AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
-# Blogroll
-LINKS = (('Eflatun Akademi', 'http://eflatunakademi.com/siber-guvenlik/'),)
+
 
 # Social widget
 SOCIAL = (('twitter','https://twitter.com/EflatunAkademi'), 
@@ -38,9 +37,7 @@ HOME_HIDE_TAGS = True
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
 SUMMARY_MAX_LENGTH = 20
-MENUITEMS = (('Hakkımızda', 'category/hakkimizda.html'),
-             ('Eğitimlerimiz', 'category/egitimler.html'),
-             ('Eğitmenlerimiz', 'category/egitimler.html'),)
+MENUITEMS = False
 
 
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
