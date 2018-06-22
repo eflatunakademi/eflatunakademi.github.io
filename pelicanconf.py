@@ -2,11 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+SITETITLE = u'Eflatun Siber Güvenlik'
 AUTHOR = u'esc'
-SITENAME = u'Eflatun Siber Guvenlik'
 SITEURL = 'https://eflatunakademi.github.io'
 SITEDESCRIPTION = "Eflatun Siber Güvenlik"
 PATH = 'content'
+SITESUBTITLE = 'Siber Dünyaya Adım Atın!'
+PYGMENTS_STYLE = 'monokai'
+SITELOGO = 'images/logo.png'
 
 TIMEZONE = 'Europe/Istanbul'
 
@@ -20,23 +23,26 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 
 # Blogroll
-LINKS = (('Pelican', 'http://getpelican.com/'),
-         ('Python.org', 'http://python.org/'),
-         ('Jinja2', 'http://jinja.pocoo.org/'),
-         ('You can modify those links in your config file', '#'),)
+LINKS = (('Eflatun Akademi', 'http://eflatunakademi.com/siber-guvenlik/'),)
 
 # Social widget
-SOCIAL = (('Twitter','https://twitter.com/EflatunAkademi'), 
-	('Linkedin', 'https://tr.linkedin.com/company/eflatun-akademi'),
-	('Instagram', 'https://www.instagram.com/eflatunakademi/?hl=tr'),
-	('Youtube', 'https://www.youtube.com/channel/UC924GxT83BxD-aii5fCuyig'))
+SOCIAL = (('twitter','https://twitter.com/EflatunAkademi'), 
+	('linkedin', 'https://tr.linkedin.com/company/eflatun-akademi'),
+	('instagram', 'https://www.instagram.com/eflatunakademi/?hl=tr'),
+	('youtube', 'https://www.youtube.com/channel/UC924GxT83BxD-aii5fCuyig'))
 
 DEFAULT_PAGINATION = 10
-THEME = "Flex"
+THEME = "themes/Flex"
 
+MAIN_MENU = True
+HOME_HIDE_TAGS = True
 USE_FOLDER_AS_CATEGORY = True
-DISPLAY_CATEGORIES_ON_MENU = True
-SUMMARY_MAX_LENGTH = None
+DISPLAY_CATEGORIES_ON_MENU = False
+SUMMARY_MAX_LENGTH = 20
+MENUITEMS = (('Hakkımızda', 'category/hakkimizda.html'),
+             ('Eğitimlerimiz', 'category/egitimler.html'),
+             ('Eğitmenlerimiz', 'category/egitimler.html'),)
+
 
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
 ARTICLE_URL = '{date:%Y}/{slug}.html'
@@ -45,7 +51,7 @@ DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives']
 PAGINATED_DIRECT_TEMPLATES = ['index']
 NEWEST_FIRST_ARCHIVES = True
 
-LOGO = "/images/index.jpeg"
+
 PLUGIN_PATHS = ['pelican-plugins', ]
 PLUGINS = ['i18n_subsites', ]
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
