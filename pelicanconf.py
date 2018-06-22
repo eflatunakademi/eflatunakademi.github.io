@@ -9,7 +9,7 @@ SITEDESCRIPTION = "Eflatun Siber Güvenlik"
 PATH = 'content'
 SITESUBTITLE = 'Siber Dünyaya Adım Atın!'
 PYGMENTS_STYLE = 'monokai'
-SITELOGO = '/images/logo.png'
+SITELOGO = '//tr.gravatar.com/userimage/140729574/99ec16843b4e1be68e5890455ee7021a.png?size=200'
 TIMEZONE = 'Europe/Istanbul'
 
 DEFAULT_LANG = u'tr'
