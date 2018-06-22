@@ -32,7 +32,7 @@ SOCIAL = (('Twitter','https://twitter.com/EflatunAkademi'),
 	('Youtube', 'https://www.youtube.com/channel/UC924GxT83BxD-aii5fCuyig'))
 
 DEFAULT_PAGINATION = 10
-THEME = "marble"
+THEME = "Flex"
 
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = True
