@@ -7,7 +7,7 @@ Authors: Esc
 
 
 
-![pic](/images/paketler.jpg)
+![pic](/images/paketler.png)
 
 
 

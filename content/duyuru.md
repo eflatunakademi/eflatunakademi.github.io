@@ -21,4 +21,4 @@ Kayıt formumuzu doldurup sorumuzu doğru yanıtlayın ve başlangıç paketimiz
 
 
 
-[<img src="https://github.com/eflatunakademi/eflatunakademi.github.io/blob/source/images/kayit.png" width="100px;"/>](https://goo.gl/forms/ugnUQhSWdOXgzTgJ2)
+[<img src="https://i1.wp.com/tunctuning.com/wp-content/uploads/2017/04/kayit-ol-butonu.png?resize=300%2C77" width="100px;"/>](https://goo.gl/forms/ugnUQhSWdOXgzTgJ2)
