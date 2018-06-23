@@ -6,7 +6,7 @@ Slug:
 Authors: Esc
 
 
-*VİZYONUMUZ*
+**VİZYONUMUZ**
 
 Siber güvenlik alanında yetişmiş insan ihtiyacının ülkemizde hızla artması ile beraber, bu konudaki farkındalığın da bir o kadar artması gerektiğini düşünerek, ortaokul veya lise öğrencisi olup siber güvenlik dünyasına adım atmaya çalışan, yetenekli, ilgili, fakat kendisine bir yol çizemeyen genç arkadaşlarımıza rehberlik ediyoruz. Ortaokul ve lise öğrencisi olmayıp eğitime başvuru yapmak isteyenleri iste kontenjan sınırını aşmadığı sürece geri çevirmiyoruz.
 

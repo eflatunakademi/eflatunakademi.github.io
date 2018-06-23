@@ -1,5 +1,5 @@
 Title: Eğitimimize Kayıt Olun
-Date: 2018-06-12
+Date: 2018-06-24
 Tags: esc,eflatun,security,egitim
 Category: Eğitimler
 Slug: 
@@ -14,13 +14,11 @@ Authors: Esc
 
 **Eğitim Yeri:** Kadıköy - Grandesk Kafe
 
-Eğitimle ilgili sorularınızın yanıtlanması için sosyal medya veya siber@eflatunakademi.com üzerinden iletişime geçebilirsiniz.
+
+Eğitimle ilgili sorularınızın yanıtlanması için sosyal medya veya @[mail](siber@eflatunakademi.com) üzerinden iletişime geçebilirsiniz.
 
 Kayıt formumuzu doldurup sorumuzu doğru yanıtlayın ve başlangıç paketimize ücretsiz katılma hakkı kazanın!
 
 
 
-<a href="https://goo.gl/forms/ugnUQhSWdOXgzTgJ2" target="_blank" rel="noopener"><img class="alignnone wp-image-2033 alignleft" src="/images/kayit.png" alt="" width="325" height="83" /></a>
-
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=YOUTUBE_VIDEO_ID_HERE" target="_blank"><img src="http://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg" 
-alt="IMAGE ALT TEXT HERE" width="240" height="180" border="10" /></a>
+[<img src="https://github.com/eflatunakademi/eflatunakademi.github.io/blob/source/images/kayit.png" width="100px;"/>](https://goo.gl/forms/ugnUQhSWdOXgzTgJ2)

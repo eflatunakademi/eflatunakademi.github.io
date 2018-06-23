@@ -39,7 +39,7 @@ DISPLAY_CATEGORIES_ON_MENU = False
 SUMMARY_MAX_LENGTH = 20
 MENUITEMS = (('Hakkımızda','http://siber.eflatunakademi.com/category/hakkimizda.html'),)
 
-LINKS = (('Hakkımızda', 'http://siber.eflatunakademi.com/category/hakkimizda.html'),
+LINKS = (('Hakkımızda', 'http://siber.eflatunakademi.com/2018/hakkimizda.html'),
 	('Eğitmenlerimiz','https://siber.eflatunakademi.com/2018/egitmenlerimiz.html'),
 	('Destekleyenler','http://siber.eflatunakademi.com/2018/destekleyenler.html'))
 
