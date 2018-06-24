@@ -5,7 +5,6 @@ Category: Eğitimler
 Slug: 
 Authors: Esc
 
-
 ![pic](/images/pic1.jpeg)
 
 **Eğitim Tarihi:** 21-22 Temmuz 2018
@@ -21,4 +20,4 @@ Authors: Esc
 
 Kayıt formumuzu doldurup formda bulunan soruyu doğru yanıtlayın ve başlangıç paketimize ücretsiz katılma hakkı kazanın!
 
-[<img src="https://i1.wp.com/tunctuning.com/wp-content/uploads/2017/04/kayit-ol-butonu.png" width="100px;"/>](https://goo.gl/forms/ugnUQhSWdOXgzTgJ2)
+[![pic](/images/kayit.png)](https://goo.gl/forms/ugnUQhSWdOXgzTgJ2)
