@@ -7,9 +7,17 @@ Authors: Esc
 
 
 
-![pic](/images/paketler.png)
+![pic](/images/paket.jpg)
 
 
 
- 
+**Ayrıntılar:**
+
+- Eğitimimze **herkes** katılabilir fakat **ortaokul ve lise öğrencileri** önceliklidir.
+- Eğitimimiz üç paketten oluşmaktadır.
+- Eğitimlere katılım sayısı sınırlıdır.
+- İleri seviye paketi alabilmek için ilk iki eğitim paketinin alınması **zorunludur**.
+- Eğitimlerimiz hafta sonu gerçekleşecektir.
+- Eğitim sonrası saldırı ve savunma takımları oluşturularak çeşitli yarışmalar ve oyunlar düzenlenecektir. Kazananlara bir sonraki eğitim paketi için **burs imkanı** sağlanacaktır.
+- Çeşitli donanımlarla (Raspberry pi, Firewall, Ağ Kartı vb.) eğitim içeriği zenginleştirilip pratik uygulamalar yapılacaktır. 
 
