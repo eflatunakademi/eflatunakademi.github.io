@@ -31,20 +31,22 @@ SOCIAL = (('twitter','https://twitter.com/EflatunAkademi'),
 
 DEFAULT_PAGINATION = 10
 THEME = "themes/Flex"
-
+FAVICON = "images/ikon/favicon1.ico"
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 USE_FOLDER_AS_CATEGORY = True
 DISPLAY_CATEGORIES_ON_MENU = False
-SUMMARY_MAX_LENGTH = 20
-MENUITEMS = (('Hakkımızda','http://siber.eflatunakademi.com/category/hakkimizda.html'),)
+SUMMARY_MAX_LENGTH = 50
+MENUITEMS = (('BLOG','https://siber.eflatunakademi.com/category/blog.html'),)
 
-LINKS = (('Hakkımızda', 'http://siber.eflatunakademi.com/2018/hakkimizda.html'),
-	('Eğitmenlerimiz','https://siber.eflatunakademi.com/2018/egitmenlerimiz.html'),('Eğitim Paketlerimiz','http://siber.eflatunakademi.com/2018/egitim-paketleri.html'),
-	('Destekleyenler','http://siber.eflatunakademi.com/2018/destekleyenler.html'))
+LINKS = ((u'Hakkımızda', 'https://siber.eflatunakademi.com/2018/hakkimizda.html'),
+	(u'Eğitmenlerimiz','https://siber.eflatunakademi.com/2018/egitmenlerimiz.html'),('Eğitim Paketlerimiz','http://siber.eflatunakademi.com/2018/egitim-paketleri.html'),
+	(u'Destekleyenler','https://siber.eflatunakademi.com/2018/destekleyenler.html'),
+	(u'Galeri', 'https://siber.eflatunakademi.com/2018/galeri.html'),
+	(u'Blog', 'https://siber.eflatunakademi.com/category/blog.html'))
 
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{slug}.html'
+ARTICLE_URL = '{date:%Y}/{title}.html'
 
 DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives']
 PAGINATED_DIRECT_TEMPLATES = ['index']
