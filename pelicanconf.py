@@ -31,7 +31,7 @@ SOCIAL = (('twitter','https://twitter.com/EflatunAkademi'),
 
 DEFAULT_PAGINATION = 10
 THEME = "themes/Flex"
-FAVICON = "images/ikon/favicon1.ico"
+FAVICON = "/ekstra/favicon1.ico"
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 USE_FOLDER_AS_CATEGORY = True
