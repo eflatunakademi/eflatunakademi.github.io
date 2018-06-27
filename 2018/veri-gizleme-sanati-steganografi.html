@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="" />
+
+  <link href='//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" type="text/css" href="https://eflatunakademi.github.io/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://eflatunakademi.github.io/theme/pygments/monokai.min.css">
+  <link rel="stylesheet" type="text/css" href="https://eflatunakademi.github.io/theme/font-awesome/css/font-awesome.min.css">
+
+
+
+
+    <link rel="shortcut icon" href="images/ikon/favicon1.ico" type="image/x-icon">
+    <link rel="icon" href="images/ikon/favicon1.ico" type="image/x-icon">
+
+
+
+<meta name="author" content="Huriye Özdemir" />
+<meta name="description" content="Güvenlik deyince aklımıza ilk gelen kavramlar hiç kuşkusuz veri gizliliği (secrecy) ve mahremiyettir(privacy). Birbirine oldukça benzeyen bu iki kavram aslında bazı noktalarda farklılık gösteriyor. Biz bir veriyi çeşitli algoritmalarla veya araçlarla şifreleyebilir yani üçüncü kişilerin anlayamayacağı bir biçime dönüştürebiliriz. Fakat bu durumda üçüncü kişiler bu verinin varlığından haberdar olur …" />
+<meta name="keywords" content="">
+
+<meta property="og:site_name" content="Eflatun Siber Güvenlik"/>
+<meta property="og:title" content="Veri Gizleme Sanatı STEGANOGRAFİ"/>
+<meta property="og:description" content="Güvenlik deyince aklımıza ilk gelen kavramlar hiç kuşkusuz veri gizliliği (secrecy) ve mahremiyettir(privacy). Birbirine oldukça benzeyen bu iki kavram aslında bazı noktalarda farklılık gösteriyor. Biz bir veriyi çeşitli algoritmalarla veya araçlarla şifreleyebilir yani üçüncü kişilerin anlayamayacağı bir biçime dönüştürebiliriz. Fakat bu durumda üçüncü kişiler bu verinin varlığından haberdar olur …"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:url" content="https://eflatunakademi.github.io/2018/Veri Gizleme Sanatı STEGANOGRAFİ.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-06-27 00:00:00+03:00"/>
+<meta property="article:modified_time" content=""/>
+<meta property="article:author" content="https://eflatunakademi.github.io/author/huriye-ozdemir.html">
+<meta property="article:section" content="Blog"/>
+<meta property="og:image" content="//tr.gravatar.com/userimage/140729574/99ec16843b4e1be68e5890455ee7021a.png?size=200">
+
+  <title>Eflatun Siber Güvenlik &ndash; Veri Gizleme Sanatı STEGANOGRAFİ</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://eflatunakademi.github.io">
+        <img src="//tr.gravatar.com/userimage/140729574/99ec16843b4e1be68e5890455ee7021a.png?size=200" alt="Eflatun Siber Güvenlik" title="Eflatun Siber Güvenlik">
+      </a>
+      <h1><a href="https://eflatunakademi.github.io">Eflatun Siber Güvenlik</a></h1>
+
+<p>Siber Dünyaya Adım Atın!</p>
+      <nav>
+        <ul class="list">
+
+          <li><a href="https://siber.eflatunakademi.com/2018/hakkimizda.html">Hakkımızda</a></li>
+          <li><a href="https://siber.eflatunakademi.com/2018/egitmenlerimiz.html">Eğitmenlerimiz</a></li>
+          <li><a href="http://siber.eflatunakademi.com/2018/egitim-paketleri.html">Eğitim Paketlerimiz</a></li>
+          <li><a href="https://siber.eflatunakademi.com/2018/destekleyenler.html">Destekleyenler</a></li>
+          <li><a href="https://siber.eflatunakademi.com/2018/galeri.html">Galeri</a></li>
+          <li><a href="https://siber.eflatunakademi.com/category/blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-twitter" href="https://twitter.com/EflatunAkademi" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        <li><a class="sc-linkedin" href="https://tr.linkedin.com/company/eflatun-akademi" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-instagram" href="https://www.instagram.com/eflatunakademi/?hl=tr" target="_blank"><i class="fa fa-instagram"></i></a></li>
+        <li><a class="sc-youtube" href="https://www.youtube.com/channel/UC924GxT83BxD-aii5fCuyig" target="_blank"><i class="fa fa-youtube"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://eflatunakademi.github.io">Anasayfa</a>
+
+      <a href="https://siber.eflatunakademi.com/category/blog.html">BLOG</a>
+
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="veri-gizleme-sanati-steganografi">Veri Gizleme Sanatı STEGANOGRAFİ</h1>
+    <p>
+      Posted on Wed 27 June 2018 in <a href="https://eflatunakademi.github.io/category/blog.html">Blog</a>
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Güvenlik deyince aklımıza ilk gelen kavramlar hiç kuşkusuz veri gizliliği <em>(secrecy)</em> ve mahremiyettir<em>(privacy)</em>. Birbirine oldukça benzeyen bu iki kavram aslında bazı noktalarda farklılık gösteriyor.</p>
+<p>Biz bir veriyi çeşitli algoritmalarla veya araçlarla şifreleyebilir yani üçüncü kişilerin anlayamayacağı bir biçime dönüştürebiliriz. Fakat bu durumda üçüncü kişiler bu verinin varlığından haberdar olur ve çeşitli yöntemler ile çözümlemeye çalışır. Veriyi bu şekilde    mahrem hale getiren <em>“Kriptografi”</em> biliminde verimizin güvenliği, güçlü algoritmalarla etkili bir şekilde karıştırılıp anlaşılamaz hale gelmesine bağlıdır.</p>
+<p>Bir diğer yöntem ise bu verinin varlığından bile haberdar olunmadan veriyi çeşitli yollarla gizlemek, çözümlenebilmesi için üçüncü kişilerin eline geçmesini dahi önlemektir. Bu yazımda asıl üzerinde durmak istediğim <em>Steganografi</em> bilimi ise bu noktada devreye giriyor.
+İngilizce’de “Steganography”, Yunanca’da ise “Steganos (gizli, saklı)” ve “Graphein (yazı)” kelimelerinden oluşur. Tarihi incelediğimizde yüzyıllardan beri veri gizleme ihtiyacı hep var olmuş, özellikle savaşlarda, diplomatik haberleşmelerde ve istihbarat amaçlı olarak çokça kullanılmış, çeşitli yöntemler geliştirilmiştir. Eski Yunan tarihçisi Heredot tarafından yazılmış olan Histories kitabında bulunan ilk Steganografi örneği ise Yunan ve Pers İmparatorluğu arasında geçen savaş esnasında Pers yöneticilerinden Histiaerus’ın, isyan başlatmasını istemek için kölesinin saçlarını kazıtıp gizli mesajını yazması ve saçları uzadığında bu köleyi Aristagoras’a yollaması ve mesajını iletmesi ile olmuştur.</p>
+<p>Yine milattan önce kullanılan yöntemlerden biri olan , balmumu tabletlerin içine yazının yazılıp tekrar balmumu ile kapatılması, İkinci Dünya Savaşı’nda görünmez mürekkep kullanımı, mikro noktalama ve boş şifreleme (null cipher) teknikleri, sıradan cümleler kullanılarak gizli harflerin yerlerinden kaynaklanan yöntemler ile şifreli mesajlar iletilmesi, işkence gören bir mahkumun gözlerini açıp kapayarak mors alfabesi yoluyla iletişim kurması, sadece mor ötesi ışıkla görülebilen yazılar yazmayı sağlayan kalemler kullanılması gibi geçmişten verebileceğimiz pek çok ilginç örnek bulunmaktadır.</p>
+<p>Peki günümüzün gelişmiş teknolojisini düşünecek olursak veri gizleme teknikleri ne kadar ilerlemiştir? Dijital dünyadaki yeni teknikler ise şu şekildedir:
+•   Görüntü veya ses dosyalarındaki en düşük bitlerin içerisine mesajları gizlemek
+•   Bir ses dosyasının yankısını değiştirmek
+•   Bir dosyanın görünmeyen ya da kullanılmayan alanlarına veriyi yerleştirmek
+Steganografi biliminde kullanılan terminolojik bazı kavramlar ise şu şekildedir:
+<strong>Taşıyıcı ya da kapak dosyası (cover):</strong>  Gizli bilginin içerisine yazılacağı orijinal dosya.
+<strong>Stego-medium:</strong> Bilginin saklanacağı ortam.
+<strong>Gömülü (embedded/payload) :</strong> Kapak dosyasında gizlenmiş veri.
+<strong>Stego:</strong> Mesaj gömüldükten sonra dosyanın hali.
+<strong>Steganaliz:</strong> Dosya içerisine gömülmüş veriyi tespit etme işlemi. </p>
+<h1>STEGANOGRAFİ METOTLARI</h1>
+<p><strong>Metin Steganografi</strong>
+Bu teknik oldukça basit görünmesine rağmen metin içerisine gizlenmiş veriyi bulmak oldukça zor. Öncelikle metin içerisinde cümle yapıları oluşturulur ve belirlenmiş kurallara göre harfler eklenir, boşluklar doldurulur. Metin içerisinde ifade tarzında herhangi bir hata olmaz fakat bazı kelimelerde morfolojik hatalar görülebilir. Örnek olarak, Alman bir casusun İkinci Dünya Savaşı’nda kullandığı şifreli metni inceleyelim:</p>
+<p><em>“Apparently neutral’s protest is thorougly discounted and ignored. Isman hard hit. Blockade issue affects Pretext for embargo on by products, ejecting suets and vegetable oils.”</em></p>
+<p>Her kelimenin ikinci harfini birleştirerek mesajını iletmiş:</p>
+<p><em>“Pershing sails from NY June .”</em></p>
+<p>Metin Staganografi’nin satır/kelime kaydırma (Line/Word shifting), açık alan (Open Spaces), karakter kodlama (encoding), semantik metotlar, kelimeler içinde özel karakter kullanımı, ilkleme (akrostiş) gibi kullanılabilecek daha birçok yöntemi vardır.</p>
+<p><strong>Görüntü Steganografi</strong>
+En sık kullanılan yöntemlerden biri olan Görüntü Steganografi ile resmin pikselleri içerisine mesajlarımızı gizleyebiliyoruz. En az öneme sahip bite ekleme, yani <em>“LSB (Least Significant Bit) in BMP”</em> tekniğinde veri saklamak için ideal olan, herhangi bir sıkıştırma yapmadan resmin özelliklerini tutan 24 bitlik resim dosyası BMP (Bitmap) içerisine veriyi gizleyebiliriz. Her pikselin 24 bit olduğunu düşünürsek 2 bitlik oynamalar fark edilebilir bir değişiklik yapmayacaktır. Her pikselin renk değeri ise kırmızı yeşil ve mavi renklerini içeren 3 byte’lık alanda tutulur.</p>
+<p>24 bitlik resmin 3 pikselinin şu şekilde olduğunu düşünürsek:
+(00101101    00011101    11011100)
+(10100110    11000101    00001100)
+(11010010    10101100    01100011)</p>
+<p>Her 8 bitin LSB’sini işaretlediğimizde 200 sayısının binary karşılığı olan 11001000 sayısı karşımıza çıkıyor.</p>
+<p>(0010110<strong>1</strong>    0001110<strong>1</strong>    1101110<strong>0</strong>)
+(1010011<strong>0</strong>    1100010<strong>1</strong>    0000110<strong>0</strong>)
+(1101001<strong>0</strong>    1010110<strong>0</strong>    01100011)</p>
+<p>Bunun gibi LSB’ler kullanılarak harflerin binary karşılıkları ile veriler bitler içerisine kolaylıkla gizlenebilir.</p>
+<p>Bu işlemi gerçekleştirmek için sık kullanılan Steghide aracını Linux işletim sistemimize kurarak verilerimizi nasıl gizleyeceğimizi uygulamalı olarak görelim.
+1.  Öncelikle “apt-get install steghide” komutu ile aracımızın kurulumunu yapıyoruz.</p>
+<p><img alt="pic" src="/images/stega/1.PNG"></p>
+<ol>
+<li>Kurulduktan sonra <em>“Steghide”</em> yazarak verimizi gizlemek için ne gibi parametreler kullanabileceğimizi görebiliriz. </li>
+</ol>
+<p><img alt="pic" src="/images/stega/2.PNG"></p>
+<ol>
+<li>Ben <em>“Steghide embed -cf ogemi.jpg -ef parolalarım.txt”</em> komutu kullanarak verilerin gizleneceği dosyayı belirtmek için -cf, hangi dosyayı gizleyeceğimizi belirtmek için ise -ef parametresini kullandım. <em>“Embedding Options”</em> kısmını inceleyerek eklemek istediğiniz parametreler varsa ekleyebilirsiniz. Veri gömülürken de üçüncü kişilere karşı tedbir amaçlı bir “passphrase” oluşturmamız isteniyor.</li>
+</ol>
+<p><img alt="pic" src="/images/stega/3.PNG"></p>
+<ol>
+<li>Text dosyamızın içeriğini o gemiye istifledikten sonra gemimizin yükünü inceleyebiliriz. Yani <em>“steghide info ogemi.jpg”</em> komutu ile içerik hakkında bilgi alalım.</li>
+</ol>
+<p><img alt="pic" src="/images/stega/4.PNG"></p>
+<ol>
+<li>Son olarak gemimizin yükünü hafifletmek ve parolalarımızı çekmek istersek de <em>“steghide extract -sf ogemi.jpg”</em> komutunu kullanıyoruz.  Dosyayı çıkartmak için ise en başta oluşturduğumuz şifreyi giriyoruz.</li>
+</ol>
+<p><img alt="pic" src="/images/stega/5.PNG"></p>
+<ol>
+<li>Son olarak resmimize baktığımızda öncesi ve sonrası arasında fark edilebilir bir değişim olmadığını görüyoruz. Yani gemimiz hala kalbin derinliklerine gömülmüş bir şekilde bekliyor. </li>
+</ol>
+<p><img alt="pic" src="/images/stega/önce.PNG"> <img alt="pic" src="/images/sonra/5.PNG"></p>
+<p><strong>Ses Steganografi</strong></p>
+<p>Ses steganografi ise bir ses dosyasında verileri gizlemeye veya güvenli ve sağlam bir şekilde işaretlemek için kullanılır. Gizli bir bilgi, ses sinyalleri kullanılarak gömülmek suretiyle gizlenmiş olur. Bu yöntem, savaş alanı iletişimi ve bankacılık işlemleri gibi bazı uygulamalarda ciddi ve hayati bir öneme sahiptir. Bu gömme işlemi de tıpkı görüntü steganografide olduğu gibi binary değerleri değiştirerek yapılır. Fakat görüntüden farklı olarak ses dosyası için kullanılan sinyal işleme metotları daha karmaşıktır.</p>
+<p>Ses sinyallerini dijital ve analog olmak üzere ayırırsak dijital sesler ayrık, analog sesler ise süreklidir. Ayrık sinyaller, belirli oranlarda sürekli analog sinyalleri işlenerek üretilir. Örneğin, CD için dijital ses  işleme oranı 44 kHz'dir. Aşağıdaki şekilde dijital ses sinyali dalgası oluşturmak için işlenmiş sürekli bir analog ses sinyali dalgasını göstermektedir.</p>
+<p><img alt="pic" src="/images/stega/sinyal.PNG"> <img alt="pic" src="/images/stega/sinyal2.PNG"></p>
+<p><strong>Ses Steganografi Metotları</strong></p>
+<p>Matematik ve sinyal işleme alanındaki gelişmelerle birlikte ses dosyalarına veri gömmek için bir çok metot geliştirilmiştir. Bu yüzden en sık kullanılanlar üzerinde durmak istiyorum.</p>
+<p><strong>LSB (Least Significant Bit) Kodlama Metodu</strong>
+Görüntü steganografide de belirtmiş olduğum gibi en sık kullanılan ve en kolay yöntemlerden biri olan LSB kodlama ses dosyaları için de şüphesiz aynı öneme sahip. Ses dosyaları için nasıl olduğunu yine bir örnekle inceleyecek olursak aşağıdaki tabloda “Hi” kelimesinin binary karşılığının LSB ile kodlandığını görüyoruz.
+Bu yöntem ile ses düzeyindeki değişiklikler kulağımızla algılayamayacağımız seviyededir. İnsan kulağının duyamayacağı 20.000 Hz. üzerindeki frekanslar ayarlanarak mesajlar gizlenir.</p>
+<p><strong>Eşlik biti (Parity) Kodlama Metodu</strong>
+Parity kodlamasında ise ses sinyali ayrı örnek alanlarına ayrılır ve her mesaj bir eşlik biti içindeki alanda gizlenir. Bu nedenle, bu metot bitleri gizlemek için daha geniş bir seçenek yelpazesi sunar ve sinyaldeki değişimi daha gözlemlenemez hale getirir.</p>
+<p><img alt="pic" src="/images/stega/sinyal3.PNG"></p>
+<p>Bu tekniklerden farklı olarak faz kaymaları kullanılarak veri gizlemeye yarayan <em>Faz Kodlama (Phase Coding)</em> tekniği, ses sinyalinin frekans spektrumu boyunca gizli verileri mümkün olduğunca maksimum seviyede dağıtmaya çalışan <em>Yayılı Spektrum (Spread Spectrum)</em> tekniği ve gizli verinin ayrık bir sinyale eko eklenerek bir ses ortamına sokulmasını sağlayan Eko Gizleme tekniği gibi yöntemler de mevcuttur fakat ayrıntıya girmeden bu işlemi hangi araçlarla nasıl yapabileceğimizden bahsedeceğim.</p>
+<p>Teknik bilgiden biraz pratik bilgiye geçiş yapalım. Eğer Mr. Robot dizisini izliyorsanız 1. Sezon 8. bölümde Elliot’un <em>DeepSound</em> aracını kullanarak verileri ses dosyaları içerisine nasıl sakladığını da görmüş olmalısınız.</p>
+<p>DeepSound aracında <em>“Open carrier files”</em> seçeneği ile ses dosyasını seçip, <em>“Add secret files”</em> seçeneği ile de saklamak istediğimiz dosyayı ekliyoruz. Ses kalitesini istediğimiz gibi ayarlayıp <em>“Encode secret files”</em> dediğimizde veriyi gömmeden önce istediğimiz formatı seçip şifre belirledikten sonra da işlem tamamlanmış oluyor. Veriyi sakladığımız ses dosyasını tekrar programda açtıktan sonra <em>“Extract secret files”</em> dediğimizde ise gizli veriye ulaşmış oluyoruz.</p>
+<p>Steghide ve DeepSound dışında elbette onlarca araç geliştirilmiş durumda. <em>QuickStego, StegFS, StegoShare, Outguess, Stegbreak, Zsteg, OpenStego, Matroschka, AudioStegano, BitCrypt, MP3Stego, Xiao, Crypture, SteganographX Plus, rSteg, SSuite, Picsel, Camouflage, Hide’N’Send</em> bunlardan sadece bazıları. Bu saydığım araçların içerisinde hem görüntü hem de ses dosyaları için geliştirilmiş olanları da bulunuyor.</p>
+<p>Steganografi metin, ses, resim ya da video dosyalarına telif hakkı sağlamak amacıyla <em>damgalama (watermarking)</em> işlemlerinde de kullanılır. Dijital damgalama görünür ve görünmez olmak üzere ikiye ayrılır. Görünen damgalama, herhangi bir resmin köşesinde bulunan logo olabilir. Görünmeyen damgalamada ise kişiye özel veriler ona sahiplik oluşturması açısından dosyaya gömülür.</p>
+<p>Son olarak <em>Steganaliz</em> ise bir taşıyıcı dosya içerisinde, saklanmış bir bilgi olup olmadığını bulmayı, eğer var ise bu bilgiyi elde etmeyi amaçlayan ve steganografik sistemlere karşı yapılan analiz ve araştırmalara denir. <em>Pasif (tarama)</em> ve <em>aktif (bozma/yok etme)</em> olarak ikiye ayrılır. Steganalistler çeşitli steganografik saldırılara karşı incelemeler yaparlar. Bu saldırı tipleri ve amaçları kısaca şu şekildedir.</p>
+<p><strong>File only:</strong>  Saldırganın dosyaya erişimi vardır ve içeride gizlenmiş bir mesaj olup olmadığını belirlemeye çalışır.
+<strong>File an Original copy:</strong>  Saldırgan şifrelenmiş mesajın bir kopyasına ve orijinalinin bir kopyasına sahip olabilir.
+<strong>Reformat Attack:</strong>    Dosyanın biçimi değiştirilir.
+<strong>Compression Attack:</strong>  Sıkıştırma algoritmaları ile gereksiz bilgiler bir dosyadan kaldırılmaya çalışılır.
+<strong>Visual Attack:</strong>  Bir insanın görsel anormallikleri aramasına izin verecek şekilde nesnenin bir kısmını saran stego-only-ataktır.
+<strong>Structural Attack:</strong>   Saldırgan, bitlerin istatistiksel profilini inceler bir mesajın varlığını tespit edebilir.
+<strong>Statistical Attack:</strong> Potansiyel bir kapak dosyasının frekans dağılımının, kapak dosyasının teorik olarak beklenen dağılımı ile karşılaştırılmasıdır.</p>
+<p>Geçmişten günümüze Steganografi sanatının tarihsel sürecini incelediğimizde ne kadar mesafe katettiğini açıkça görebiliyor, gelecekte de hızla ilerleyip yepyeni tekniklerle karşımıza çıkabileceğini de tahmin edebiliyoruz. İnsanlar için gizlilik ve mahremiyetin oldukça önemli olduğunu düşünürsek Steganografi ve Kriptografi bilimleri birbirlerini tamamlayarak hayatımızda önemli ve vazgeçilmez bir yer kaplıyor.</p>
+<p><strong>Kaynakça:</strong></p>
+<p><a href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.5678&amp;rep=rep1&amp;type=pdf">http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.401.5678&amp;rep=rep1&amp;type=pdf</a>
+<a href="http://resources.infosecinstitute.com/steganography-and-tools-to-perform-steganography/#gref">http://resources.infosecinstitute.com/steganography-and-tools-to-perform-steganography/#gref</a>
+https://www.slideshare.net/UttamJain/steganography-14902856 
+http://steganography-info.blogspot.com.tr/2008/04/steganography-and-attacks.html </p>
+  </div>
+  <div class="tag-cloud">
+    <p>
+    </p>
+  </div>
+
+
+
+
+
+</article>
+
+    <footer>
+ 
+    </footer>
+  </main>
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Eflatun Siber Güvenlik ",
+  "url" : "https://eflatunakademi.github.io",
+  "image": "//tr.gravatar.com/userimage/140729574/99ec16843b4e1be68e5890455ee7021a.png?size=200",
+  "description": "Eflatun Siber Güvenlik"
+}
+</script>
+
+</body>
+</html>
