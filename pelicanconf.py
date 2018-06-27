@@ -46,7 +46,7 @@ LINKS = ((u'Hakkımızda', 'https://siber.eflatunakademi.com/2018/hakkimizda.htm
 	(u'Blog', 'https://siber.eflatunakademi.com/category/blog.html'))
 
 ARTICLE_SAVE_AS = '{date:%Y}/{slug}.html'
-ARTICLE_URL = '{date:%Y}/{title}.html'
+ARTICLE_URL = '{date:%Y}/{slug}.html'
 
 DIRECT_TEMPLATES = ['index', 'categories', 'authors', 'archives']
 PAGINATED_DIRECT_TEMPLATES = ['index']

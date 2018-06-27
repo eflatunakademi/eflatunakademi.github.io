@@ -134,6 +134,7 @@ Son olarak *Steganaliz* ise bir taşıyıcı dosya içerisinde, saklanmış bir 
 
 Geçmişten günümüze Steganografi sanatının tarihsel sürecini incelediğimizde ne kadar mesafe katettiğini açıkça görebiliyor, gelecekte de hızla ilerleyip yepyeni tekniklerle karşımıza çıkabileceğini de tahmin edebiliyoruz. İnsanlar için gizlilik ve mahremiyetin oldukça önemli olduğunu düşünürsek Steganografi ve Kriptografi bilimleri birbirlerini tamamlayarak hayatımızda önemli ve vazgeçilmez bir yer kaplıyor.
 
+HURİYE ÖZDEMİR - [Arka Kapı Dergisi 2. Sayı](https://www.arkakapidergi.com/)
 
 **Kaynakça:**
 

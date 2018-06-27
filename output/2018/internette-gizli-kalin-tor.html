@@ -24,14 +24,14 @@
 
 
 <meta name="author" content="M. Enes Özen" />
-<meta name="description" content="" />
+<meta name="description" content="Tor(The Onion Router) Tarayıcısı, internette gezinen kişilerin kimliğini gizleyerek ve internet otoritelerinin web trafiğini izlenmesini engelleyerek özel bilgileri koruyan bir tarayıcıdır. Tor aynı zamanda internet filitrelerini atlatmak için de kullanılabilir. Tor ilk olarak Amerikan Donanması ile birlikte devlet içi iletişim için geliştirilmiştir. Şuan ise herkesin erişebildiği (gazeteci, aktivist, ordu …" />
 <meta name="keywords" content="">
 
 <meta property="og:site_name" content="Eflatun Siber Güvenlik"/>
 <meta property="og:title" content="İnternette Gizli Kalın - TOR"/>
-<meta property="og:description" content=""/>
+<meta property="og:description" content="Tor(The Onion Router) Tarayıcısı, internette gezinen kişilerin kimliğini gizleyerek ve internet otoritelerinin web trafiğini izlenmesini engelleyerek özel bilgileri koruyan bir tarayıcıdır. Tor aynı zamanda internet filitrelerini atlatmak için de kullanılabilir. Tor ilk olarak Amerikan Donanması ile birlikte devlet içi iletişim için geliştirilmiştir. Şuan ise herkesin erişebildiği (gazeteci, aktivist, ordu …"/>
 <meta property="og:locale" content="en_US"/>
-<meta property="og:url" content="https://eflatunakademi.github.io/2018/İnternette Gizli Kalın - TOR.html"/>
+<meta property="og:url" content="https://eflatunakademi.github.io/2018/internette-gizli-kalin-tor.html"/>
 <meta property="og:type" content="article"/>
 <meta property="article:published_time" content="2018-06-27 00:00:00+03:00"/>
 <meta property="article:modified_time" content=""/>
@@ -95,7 +95,100 @@
 
 
   <div>
-    
+    <p><em>Tor(The Onion Router)</em> Tarayıcısı, internette gezinen kişilerin kimliğini gizleyerek ve internet otoritelerinin web trafiğini izlenmesini engelleyerek özel bilgileri koruyan bir tarayıcıdır. Tor aynı zamanda internet filitrelerini atlatmak için de kullanılabilir.</p>
+<p>Tor ilk olarak Amerikan Donanması ile birlikte devlet içi iletişim için geliştirilmiştir. Şuan ise herkesin erişebildiği (gazeteci, aktivist, ordu vs.) sanal tünellerden gizlilik ve güvenlik sağlamaktadır.</p>
+<p>Tor Tarayıcı, Mozilla Firefox’un güncel ve gizlilik açısından optimize edilmiş bir versiyonudur. Çevrimiçi anonimlik ve engellenmiş sitelere erişim sağlayan ücretsiz ve açık kaynaklı bir yazılımdır. Diğer tarayıcılardan farklı olarak Tor Tarayıcısı;</p>
+<ul>
+<li>Kullanıcının IP adresini gizleyerek internette anonim dolaşmayı sağlar,</li>
+<li>Engellenmiş sitelere erişim sağlar,</li>
+<li>Normalde varsayılan olarak gelen çevrimiçi izleme özellikleri içermez,</li>
+<li>Kullanıcı verilerinden para kazanmaz,</li>
+<li>Dünyanın en ünlü uzmanlarının bazıları tarafından desteklenmekte ve önerilmektedir.</li>
+</ul>
+<p>Tor Tarayıcı, ücretsiz ve açık kaynak yazılım üzerinde çalışan, gizlilik ve sansür atlatmayı etkin bir şekilde kullanmak için tasarlanmış Tor ağı üzerinde çalışır. Tor ağı, dünyanın dört bir yanındaki gönüllüler tarafından işletilen binlerce sunucudan oluşmaktadır. Tor tarayıcı her yeni bağlantıda 3 röle seçer ve bunlardan internete bağlanır. Her bağlantı esnasında röleler veriyi gönderdiği ve aldığı yolu tam olarak bilmeyecek şekilde şifrelenir.
+Tor tarayıcı kullanıldığında internet bağlantısını farklı bir IP adresinden, genellikle farklı bir ülkeden gelmiş gibi gösterecektir. Bu sayede, erişilen web sitesinden IP adresimizi gizlerken, ağ trafiğimizi izlemeyi denetleyebilecek  üçüncü taraflardan erişilen web sitesini de gizler.</p>
+<h3>1.Tor Nasıl Çalışır?</h3>
+<p>Aşağıdaki adımlar, Ahmet'in bilgisayarının Merve’nin sunucusu ile iletişim kurmak için Tor Tarayıcı kullandığı zaman Tor ağının nasıl çalıştığını göstermektedir:
+<strong>Adım 1:</strong> Ahmet’in Tor Tarayıcısı, Tor dizin sunucusundan(Ayşe) Tor röleleri[1] listesini alır.</p>
+<p><img alt="pic" src="/images/tor/1.jpg"></p>
+<p><strong>Adım 2:</strong> Ahmet'in Tor Tarayıcısı, Tor ağından hedef sunucuya (Merve) rastgele bir yol seçer. Tor ağındaki tüm bağlantılar şifrelenmiştir (yeşil [3]). Bu örnekte, son bağlantı şifrelenmemiştir (kırmızı [2]) çünkü Merve’nin sunucusu http’dir. Ancak Ahmet bir https web sitesini ziyaret ediyorsa son bağlantı da şifrelenmiş olurdu.</p>
+<p><img alt="pic" src="/images/tor/2.jpg"></p>
+<p><strong>Adım 3:</strong> Eğer daha sonra Ahmet başka bir sunucuyu (Mustafa) ziyaret ederse, Ahmet'in Tor Tarayıcısı farklı rastgele bir yol seçer.</p>
+<p><img alt="pic" src="/images/tor/3.jpg"></p>
+<p><strong>NOT:</strong> Anonimlik ve hız arasında bir ters orantı vardır. Tor, internet trafiğini dünyanın çeşitli yerlerinde bulunan gönüllü sunucular aracılığıyla yaptığı için anonimlik sağlar ancak normal internet bağlantısından neredeyse her zaman yavaş olacaktır.</p>
+<p><strong>Dikkat !:</strong> 2016 yılında Paris de düzenlenen Def Con 24 konferansında Tor Taracının <em>çıkış düğümleri (exit nodes)</em> kullanılarak bir zafiyet keşfedilmiştir. Bağlantı için kullanılan Tor röleleri gönüllüler tarafından yönetilir. Bu yüzden bu röleleri kontrol etmek mümkündür. Bu durumu istismar etmek isteyen kişler (hackerlar yada kanun koyucular) bu rölelerin içine kendi rölelerini ağ analiz teknolojileri kullanarak eklerler. Yukarıda da belirttiğim gibi mesaj rölelere şifrelenmiş katmanlar şeklinde gönderilir, rastgele bir şekilde başka röleye bağlantı sağlanır. Son röle yani exit node son katmanın şifresini çözebilir ve elde edilen mesaj açık metindir. Eğer bu son röle kötü niyetli bir düğüm ise bu röleye uğrayan mesaj açık bir şekilde okunabilir. Şöyleki bu mesaj da kişinin gerçek IP adresi ve yeri görünmeyecektir ancak kullanıcı adı, parola, banka bilgisi gibi bilgiler okunabilir.</p>
+<h3>2.Tor Tarayıcısının Yüklenmesi</h3>
+<p><strong>Adım 1:</strong> Aşağıdaki adrese gidilir ve <em>Download Tor Browser</em> butonuna basılır.</p>
+<p><img alt="pic" src="/images/tor/4.jpg"></p>
+<p><strong>Not:</strong> Eğer yukarıdaki adrese erişim engellendiyse başka bir adresden indirebilmek için <em>gettor@torproject.org</em> adresine kullandığımız işletim sistemini (Windows,Osx veya Linux) belirterek bir e-posta göndererek edinebiliriz.
+<img alt="pic" src="/images/tor/5.jpg"></p>
+<p><strong>Adım 2:</strong> İndirmek istediğiniz dili ve işletim sistemini belirleyin</p>
+<p><img alt="pic" src="/images/tor/6.jpg"></p>
+<p><strong>Adım 3:</strong> Kurulum dosyasının indirildiği dizine gidilir.</p>
+<p><img alt="pic" src="/images/tor/7.jpg"></p>
+<p><strong>Adım 4:</strong> exe dosyasına çift tıklanır ve ardından dil seçimi yapılır.</p>
+<p><img alt="pic" src="/images/tor/8.jpg"></p>
+<p><strong>Adım 5:</strong> Tor Tarayıcısının yüklenmek istenilen dizin belirlenir. Şekil 6 da yüklenilmek istenilen dizin olarak masaüstü seçilmiş.</p>
+<p><img alt="pic" src="/images/tor/9.jpg"></p>
+<p>Şekil 6: Tor Tarayıcının kurulum yeri</p>
+<p><strong>Adım 6:</strong> Kurulumu tamamlamak için aşağıdaki pencerede bitir(finish) butonuna tıklayın. </p>
+<p><img alt="pic" src="/images/tor/10.jpg"></p>
+<h3>3.Tor Ağına Bağlamak İçin Gerekli Ayarlar</h3>
+<p><strong>Adım 1:</strong> Eğer Tor internete girilen ülkede engellenmemiş ise direk bağlan (connect) butonuna basarak tarayıcı açılabilir. Ancak Türkiye’de tor engellenmiş durumdadır. Bu sebeple ayarlar yapılandırılmalıdır.</p>
+<p><img alt="pic" src="/images/tor/11.jpg"></p>
+<p><strong>Adım 2:</strong> Yapılandır(Configure) butonuna basıldığında aşağıdaki pencere açılır. Burada Tor internete girilen ülkede engellendiği için köprü bağlantıları kullanılır. Köprü bağlantıları halka açık dizinde listelenmediği için engellenmesi daha zordur. Köprü olarak hazır bulunan obfs4 gibi aracılar seçilip bağlan(connect) butonuna basılır.</p>
+<p><img alt="pic" src="/images/tor/12.jpg"></p>
+<p><strong>Adım 3:</strong> Kısa bir süre sonra Tor Tarayıcı açılacaktır</p>
+<p><img alt="pic" src="/images/tor/13.jpg"></p>
+<h3>4.Özel Köprüler İle Tor Ağında Bağlanma</h3>
+<p>Tor ağına bağlanmak için daha az kişiler tarafından kullanılan ve bu sebeple engellenmesi daha düşük olan özel köprüler ile bağlantı yapılabilir. Tor sayfasına erişilemiyorsa “bridges@torproject.org” adresine “get bridges” yazip e-mail göndererek özel köprüler elde edilebilir.</p>
+<p>Ancak Tor sayfasına erişilebiliniyorsa şu adımlar uygulanarak özel köprüler elde edilebilinir;</p>
+<p><strong>Adım 1:</strong> Aşağıdaki adrese gidilir ve sadece köprüleri bana ver(just give me bridges) butonuna tıklanır.</p>
+<p><img alt="pic" src="/images/tor/14.jpg"></p>
+<p><strong>Adım 2:</strong>  Güvenlik kodu doldurulur ve girişe basılır.</p>
+<p><img alt="pic" src="/images/tor/15.jpg"></p>
+<p><img alt="pic" src="/images/tor/16.jpg"></p>
+<p><strong>Adım 3:</strong> Aldığımız köprüler aşağıdaki bölüme kopyalanır ve bağlan (connect) butonuna tıklanır.</p>
+<p><img alt="pic" src="/images/tor/17.jpg"></p>
+<h3>5.Tor’u Güvenli ve Anonim Bir Şekilde Kullanmak İçin Yapılması Gerekenler</h3>
+<p>Tor Tarayıcı sadece Tor Tarayıcısı penceresinde yapılan işlemler için anonimlik sağlar. Uygulamanın çalışıyor olması diğer programların da Tor Ağını kullanıyor anlamına gelmemektedir.</p>
+<p><strong>Tor Tarayıcının çalışıp çalışmadığını kontrol etme</strong>
+Tor tarayıcının düzgün bir şekilde kurulup çalıştığından emin olmak için Tor Ağ Ayarlarını Test Et(Test Tor Network Settings) linkine tıklanabilir.</p>
+<p><img alt="pic" src="/images/tor/18.jpg"></p>
+<p>Eğer aşağıdaki gibi bir sayfayla karşılaşırsak Tor tarayıcının düzgün çalıştığını söyleyebiliriz.</p>
+<p><img alt="pic" src="/images/tor/19.jpg"></p>
+<p>Tor Projesinin kendi control sistemi haricinde https://www.iplocation.net/ ve https://www.ip2location.com/ adreslerinden bağlantı bilgilerini öğrenebiliriz.</p>
+<p><strong>Yeni Kimlik Oluşturma</strong></p>
+<p>İstediğimiz zaman yeni kimlik oluşturabiliriz. Bu sayede Tor yeni bağlantı düğümleri oluşturacak ve erişilecek web sitelerine farklı bir IP adresinden ulaşıyor gibi görülecektir. Bunu yapmak için aşağıdaki adımlar uygulanabilir.</p>
+<p><strong>Adım 1:</strong> Tor Tarayıcısı menüsünü açmak için   butonuna tıklanır.</p>
+<p><img alt="pic" src="/images/tor/20.jpg"></p>
+<p><strong>Adım 2:</strong> Açılan menüden Yeni Kimlik (New Identity) seçilir. Tor Tarayıcı tarama geçmişini temizleyecek ve yeniden başlayacaktır. Tarayıcı yeniden başladığında farklı bir IP adresinden bağlandığını görebilirsiniz.</p>
+<p><strong>NoScript Eklentisinin Etkinleştirilmesi</strong>
+Tor Tarayıcısı NoScript eklentisi ile birlikte gelir ancak devre dışı bırakılmıştır. NoScript, zararlı web sitelerinden ve gerçek kimliğimizi Tor Tarayıcısındaki kodlar aracılığıyla ifşa edilmesine karşı ek koruma sağlar. Bu nedenle NoScript eklentisinin aktif edilmesinde fayda vardır.
+Aşağıdaki adımlar izlenerek NoScript aktif edilebilir.</p>
+<p><strong>Adım 1:</strong> Tor Tarayıcının sol üstünde yer alan   simgesine tıklanır.</p>
+<p><img alt="pic" src="/images/tor/21.jpg"></p>
+<p><strong>Adım 2:</strong> Global Olarak Komutları Engelle( Forbid Scripts Globally) seçilir.</p>
+<p>Bu ayar yapıldığında pek çok siteyi bozuk görebilirsiniz. Eğer web sitesi doğru yüklemeyi başaramaz ise şekil 1’de gösterilen tuşa tıklayarak ve geçici olarak bu sayfaya izin ver(Temporarily allow all this page) seçilerek web sitesi NoScript beyaz listesine eklenebilir.</p>
+<p><strong>HTTPS Everywhere Eklentisini Etkinleştirmek</strong></p>
+<p>HTTPS Everywhere eklentisi Tor Tarayıcı ile birlikte gelmektedir. Bu eklenti yardımıyla internette gezinirken girilen sitelerin HTTP yerine HTTPS protokolünü otomatik olarak devreye sokarak güvenli bir şekilde dolaşmamızı sağlar. Bu sayede günümüzde sıkça rastlanılan Phishing(Oltalama) saldırılarına karşı bir nebze daha koruma sağlar.</p>
+<p>Aşağıdaki adımlar izlenerek HTTPS Everywhere eklentisi aktif edilebilir.</p>
+<p><strong>Adım 1:</strong> Tor Tarayıcın sağ üst köşesinde bulunan   simgesine tıklanır.</p>
+<p><img alt="pic" src="/images/tor/22.jpg"></p>
+<p><strong>Adım 2:</strong> HTTPS Everywhere’ e izin ver(Enable HTTPS Everywhere) ve tüm şifrelenmemiş istekleri engelle(Block all unencrypted requests) kutucukları işaretlenir. Eğer HTTP kullanan bir siteye tekrar erişmek istersek tüm şifrelenmemiş istekleri engelle(Block all unencrypted requests) kutucuğundaki seçenek kaldırılmalıdır.</p>
+<h3>Deep Web – Dark Web</h3>
+<p>Tor denildiği zaman akla ilk gelen kavramlardan biri Deep Web(Derin İnternet). İnternette arama yapıldığında ilk olarak karşımıza çıkan bir buz dağı resmidir.</p>
+<p><img alt="pic" src="/images/tor/23.jpg"></p>
+<p>Burada suyun üzerinde kalan yani bizim dışardan baktığımızda gördüğümüz kısım normal tarayıcılar ile eriştiğimiz içerikleri temsil etmektedir. Geri kalan suyun altındaki büyük bölüm ise Deep Web’i yani derin interneti temsil etmektedir. Buradaki sitelere ve bilgilere erişmek için Tor Tarayıcı kullanmak gerekmektedir. Çünkü bu içeriklerin güvenli olmaması ve suç teşkil etmesi sebebiyle günlük hayatta kullandığımız arama motorları tarafından listelenmemektedir. Genellikle buradaki siteler .onion/.clos uzantılıdır. http://[rastgele rakamlar ve sayılar].onion/.clos şeklinde karışık, herhangi bir anlam ifade etmeyen alan adlarından oluşmaktadır. Resimde de görüldüğü gibi Deep Web katmanlı bir yapıya sahiptir bu yüzden daha derine inilmek isteniyorsa özel cihazlara ihtiyaç duyulmaktadır.</p>
+<p>Sonuç olarak; 
+İnternetin tehlikelerle dolu bir ortam olduğu bu günlerde gizliliği ve güvenliği mümkün olduğunca sağlamaya çalışan Tor Tarayıcısı, aynı zamanda internet sansürüne karşı bir atlatma yöntemi sunar. Ancak “Kontrolsüz güç güç değildir” ilkesinden yola çıkarak eğer kullanıcı Tor Tarayıcının gücünü, Tor’un özellik ve kabiliyetlerini bilmeden kullanırsa hem Tor’u etkin bir şekilde kullanmamış olur hem de ciddi güvenlik problemleriyle karşılaşabilir.</p>
+<p>MEHMET ENES ÖZEN - <a href="https://www.arkakapidergi.com/">Arka Kapı Dergisi 2. Sayı</a></p>
+<p>Kaynak:
+<a href="https://www.torproject.org/about/overview.html.en">https://www.torproject.org/about/overview.html.en</a>
+<a href="http://www.cs.tufts.edu/comp/116/archive/fall2016/npatel.pdf">http://www.cs.tufts.edu/comp/116/archive/fall2016/npatel.pdf</a>
+<a href="https://boingboing.net/2016/07/01/researchers-find-over-100-spyi.html">https://boingboing.net/2016/07/01/researchers-find-over-100-spyi.html</a>
+<a href="https://en.wikipedia.org/wiki/Tor_(anonymity_network)">https://en.wikipedia.org/wiki/Tor_(anonymity_network)</a>
+<a href="https://securityinabox.org/en/guide/torbrowser/windows/">https://securityinabox.org/en/guide/torbrowser/windows/</a></p>
   </div>
   <div class="tag-cloud">
     <p>
