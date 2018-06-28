@@ -19,5 +19,5 @@ Authors: Esc
 
 - Eğitimle ilgili sorularınızın yanıtlanması için sosyal medya veya [siber@eflatunakademi.com](siber@eflatunakademi.com) üzerinden iletişime geçebilirsiniz.
 
-[![pic](/images/kayit.png)](https://goo.gl/forms/ugnUQhSWdOXgzTgJ2)
+[![pic](/images/kayit.png)](https://docs.google.com/forms/d/e/1FAIpQLSc2CRHlV4GBW0s2J9PNsi1ukhWThHt8m1hE6UIoeyRYVvSXBQ/viewform)
 
