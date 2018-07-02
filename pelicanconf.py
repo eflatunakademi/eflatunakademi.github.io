@@ -31,7 +31,6 @@ SOCIAL = (('twitter','https://twitter.com/EflatunAkademi'),
 
 DEFAULT_PAGINATION = 10
 THEME = "themes/Flex"
-FAVICON = "/ekstra/favicon1.ico"
 MAIN_MENU = True
 HOME_HIDE_TAGS = True
 USE_FOLDER_AS_CATEGORY = True
@@ -59,3 +58,10 @@ JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 # Uncomment following line if you want document-relative URLs when developing
 #RELATIVE_URLS = True
+
+STATIC_PATHS = [
+    'ekstra/favicon.ico'
+]
+EXTRA_PATH_METADATA = {
+    'ekstra/favicon.ico': {'path': 'favicon.ico'}
+}
