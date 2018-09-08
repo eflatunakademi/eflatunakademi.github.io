@@ -1,5 +1,5 @@
 Title: Eğitimimize Kayıt Olun
-Date: 2018-06-28
+Date: 2018-09-07
 Tags: esc,eflatun,security,egitim
 Category: Eğitimler
 Slug: 
