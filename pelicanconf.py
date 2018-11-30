@@ -53,7 +53,7 @@ NEWEST_FIRST_ARCHIVES = True
 
 
 PLUGIN_PATHS = ['pelican-plugins', ]
-PLUGINS = ['i18n_subsites', ]
+
 JINJA_ENVIRONMENT = {'extensions': ['jinja2.ext.i18n']}
 
 # Uncomment following line if you want document-relative URLs when developing
